@@ -4,7 +4,6 @@ const pizza = document.querySelector('.pizza')
 const guests = document.querySelector('.guests')
 const loadingText = document.querySelector('.loading-text')
 
-
 loadBtn.addEventListener('click', () =>{ 
     loadingText.classList.toggle('loading-text--active')
     loadBtn.classList.toggle('loading')
@@ -29,14 +28,12 @@ loadBtn.addEventListener('click', () =>{
             div.style.transform = `rotate(${sliсeStep * i}deg)`  
         }
         guests.innerHTML = `
-            <p class="guests__all">Всего гостей: ${allGuests}</p>
-            <p class="guesta__eat">Пиццу едят: ${eatPizza}</p>
+            <p class="guests__all">Number of participants: ${allGuests}</p>
+            <p class="guesta__eat">Eat pizza: ${eatPizza}</p>
             `
     })    
 })
     
-
-
 async function getGuests () {    
     const url = 'https://gp-js-test.herokuapp.com/pizza';
     const response = await fetch(url)

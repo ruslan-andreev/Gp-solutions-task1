@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100%;
+    background: url("../img/background1.jpg") no-repeat center/cover; 
+}
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 860px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    height: 58px;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    background: #313131bb;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.loading{
+    background: #31313133; 
+    color: #ffffff54; 
+}
+.button:hover{
+    background: #3131316c;
+}
+
+.loading-text{
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;  
+}
+.heade__loading-section{
+    display: flex;
+    align-items: center;
+    height: 42px;
+}
+.loading-text--active{
+    display: block;
+}
+.main{
+    flex: 1 1 auto;
+}
+.pizza-wrapper{
+    display: none;
+}
+.pizza-wrapper--active{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 256px;
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.pizza{
+    width: 180px;
+    height: 180px;
+    border: 12px solid rgb(255, 243, 130);
+    border-radius: 50%;
+    background-color: rgb(255, 208, 0);
+    position: relative;
+    margin: 12px 0;
+}
+.sliсe-line{
+    width: 1px;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+    left: 90px;
+    transform-origin: 0 90px;
+}
+.guests{
+    width: 100%;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    text-align: center;
+    padding: 8px;
+}
